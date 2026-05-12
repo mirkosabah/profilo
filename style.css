@@ -14,6 +14,10 @@
     --gray-dark:
 }
 
+body {
+    background-color: var(--bg-primary);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -227,6 +231,7 @@ nav {
 }
 
 #container {
+
     background-color: var(--bg-primary);
     padding: 0 30px;
     font-family: var(--font-mono);
@@ -260,7 +265,7 @@ nav {
     color: var(--gray-light);
 }
 
-#container_cards {
+.container_cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 16px;
@@ -271,22 +276,206 @@ nav {
 
 }
 
-#container_cards h3 {
+.container_cards h3 {
     margin: 20px 0;
 }
 
-#container_cards p {
+.container_cards p {
     color: var(--gray-light);
 }
-.skill_card{
+
+.skill_card {
     border: 1px solid var(--bg-primary);
     margin-bottom: 20px;
-        padding: 10px;
-transition: all 0.8s;
+    padding: 10px;
+    transition: all 0.8s;
 }
-.skill_card:hover{
+
+.skill_card:hover {
     transform: translateY(-10px);
     border: 0.5px solid var(--red-dim);
     border-top: 3px solid var(--red);
     border-radius: 10px;
+}
+
+#container_numbers {
+    margin-top: 100PX;
+}
+
+#container_numbers>p {
+    color: var(--white);
+    font-size: 24PX;
+    font-weight: 700;
+}
+
+#container_numbers_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    margin-top: 60px;
+
+}
+
+.number_card {
+    padding: 36px 24px;
+    text-align: center;
+    border-right: 1px solid var(--border);
+    transition: all 0.3s;
+}
+
+.number_card:hover {
+    background-color: var(--bg-secondary);
+
+}
+
+.number_card h3 {
+    color: var(--red);
+    font-size: 40px;
+}
+
+.number_card>p {
+    margin-top: 20px;
+    color: var(--gray-light);
+    font-size: 20px;
+}
+
+
+#azmar {
+    padding: 20px 30px;
+    background-color: var(--bg-primary);
+    margin-top: 300px;
+    font-family: var(--font-body);
+    background-image: url("./ChatGPT\ Image\ May\ 12\,\ 2026\,\ 03_39_13\ PM.png");
+
+}
+
+#azmar_header {
+    font-size: 14px;
+    color: var(--red);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#azmar_header>div {
+    width: 25px;
+    background-color: var(--red);
+    height: 1px;
+}
+
+#azmar>h1 {
+    color: white;
+    font-size: 56px;
+    margin: 20px 0;
+}
+
+#azmar>p {
+    width: 40%;
+    color: var(--gray-light);
+}
+
+.cert_card {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    border: 0.5px solid var(--gray-light);
+    border-radius: 10px;
+    transition: all 0.5s;
+    justify-content: center;
+    align-items: center;
+}
+
+.cert_card:hover {
+    border: 0.5px solid var(--red-dim);
+    transform: translateY(-10px);
+
+}
+
+#conatct {
+    margin-top: 250PX;
+    font-family: var(--font-display);
+}
+
+#header_contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#header_contact>div {
+    width: 25PX;
+    height: 1px;
+    background-color: var(--red);
+}
+
+#header_contact>p {
+    color: var(--red);
+    font-size: 20px;
+}
+
+#conatct h1 {
+    color: white;
+    font-size: 56px;
+}
+
+#conatct>p {
+    width: 50%;
+    color: var(--gray-light);
+}
+
+#contact_link {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+#contact_link a {
+    font-family: var(--font-mono);
+    color: var(--gray-light);
+    transition: all 0.5s;
+}
+
+#contact_link a:hover {
+    color: var(--red);
+}
+
+footer {
+    font-family: var(--font-mono);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+#right {
+    display: flex;
+    gap: 15px;
+}
+
+#right a {
+    color: var(--gray-light);
+    font-size: 13px;
+transition: all 0.5s;
+}
+#right a:hover {
+    color: var(--red);
+    font-size: 13px;
+}
+#center{
+    font-size: 13px;
+    color: var(--gray-mid);
+}
+#left a{
+    font-size: 20px;
+    color: white;
+}
+#left a span{
+    color: var(--red);
 }

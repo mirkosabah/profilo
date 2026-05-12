@@ -1,37 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Mirko</title>
 
-  <nav>
+    <link rel="stylesheet" href="./about.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./style/about.css">
+  </head>
+
+  <body>
+    <nav>
       <div id="nav_left">
         <div>
           <a style="color: white" id="logo" href="./index.html">M</a>
-          <span id="logo_dot" style="">.</span>
+          <span id="logo_dot">.</span>
         </div>
       </div>
+
       <div id="nav_right">
-        <a id="home_btn" href="./index.html">Home</a>
-        <a id="about_btn" href="">About</a>
-        <a id="projects_btn" href="">Project</a>
-        <a id="contact_btn" href="#conatct">Contact</a>
+        <a href="./index.html">Home</a>
+        <a id="about_btn" href="./about.html">About</a>
+        <a href="./project.html">Project</a>
+        <a id="contact_btn" href="#contact">Contact</a>
       </div>
     </nav>
 
-      <footer>
-        <div id="left"><a href="">M<span>.</span></a></div>
-        <div id="center">© 2025 Mirko. Built with HTML & CSS.</div>
-        <div id="right">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Project</a>
-            <a href="">Contact</a>
+    <section id="about_hero">
+      <div id="about_header">
+        <div></div>
+        <p>ABOUT ME</p>
+      </div>
+
+      <h1>
+        Developer <span>&</span><br />
+        Aviation Professional
+      </h1>
+
+      <p id="about_intro">
+        I’m Mirko — a Software Engineering student and aviation operations
+        professional with experience in ramp handling, safety coordination,
+        auditing, and airport ground operations.
+      </p>
+    </section>
+
+    <section id="journey">
+      <div class="section_header">
+        <div></div>
+        <p>MY JOURNEY</p>
+      </div>
+
+      <div id="journey_content">
+        <div class="journey_card">
+          <h2>Software Engineering</h2>
+
+          <p>
+            I study software engineering and focus on front-end development,
+            responsive interfaces, and building clean modern websites using
+            HTML, CSS, JavaScript, and modern UI design principles.
+          </p>
         </div>
+
+        <div class="journey_card">
+          <h2>Aviation Operations</h2>
+
+          <p>
+            Alongside tech, I work in airport operations as a Ramp Agent and
+            Safety Coordinator, handling live aviation environments, operational
+            safety, aircraft support, and coordination tasks.
+          </p>
+        </div>
+
+        <div class="journey_card">
+          <h2>Safety & Auditing</h2>
+
+          <p>
+            I completed multiple aviation certifications including SMS, Human
+            Factors, Aviation Security, GSE, and Operational Auditing through
+            Azmar Training Center.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="section_header">
+        <div></div>
+        <p>EXPERIENCE</p>
+      </div>
+
+      <h1>What I Bring</h1>
+
+      <div id="experience_cards">
+        <article class="exp_card">
+          <h3>Front-End Development</h3>
+          <p>
+            Creating modern responsive websites with strong UI/UX focus and
+            clean scalable code.
+          </p>
+        </article>
+
+        <article class="exp_card">
+          <h3>Airport Operations</h3>
+          <p>
+            Experience in fast-paced airport ramp environments requiring
+            precision, communication, and teamwork.
+          </p>
+        </article>
+
+        <article class="exp_card">
+          <h3>Safety Coordination</h3>
+          <p>
+            Supporting aviation safety culture through monitoring, auditing, and
+            operational awareness.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section_header">
+        <div></div>
+        <p>CONTACT</p>
+      </div>
+
+      <h1>Let's Connect</h1>
+
+      <p id="contact_text">
+        Open to collaborations, internships, development opportunities, and
+        aviation industry networking.
+      </p>
+
+      <div id="contact_links">
+        <a href="mailto:Mirkosabah@gmail.com">Mirkosabah@gmail.com</a>
+
+        <a
+          href="https://github.com/mirkosabah"
+          target="_blank"
+        >
+          Github
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/mirko-sabah-85b458353/"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <div id="left">
+        <a href="">M<span>.</span></a>
+      </div>
+
+      <div id="center">
+        © 2025 Mirko. Built with HTML & CSS.
+      </div>
+
+      <div id="right">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./project.html">Project</a>
+        <a href="#contact">Contact</a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

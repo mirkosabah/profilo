@@ -221,6 +221,7 @@ nav {
 }
 
 #hero_social {
+    margin-top: 20px;
     display: flex;
     align-content: center;
     align-items: center;
